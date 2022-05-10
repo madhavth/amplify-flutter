@@ -10,7 +10,6 @@ environment:
 dependencies:
   amplify_analytics_plugin_interface: 0.4.5
   amplify_api_plugin_interface: 0.4.5
-  amplify_auth_plugin_interface: 0.4.5
   amplify_core: 0.4.5
   amplify_datastore_plugin_interface: 0.4.5
   amplify_flutter_android: 0.4.5
@@ -63,6 +62,16 @@ dev_dependencies:
   json_serializable: ^6.0.0
   path: any
   test: ^1.17.0
+
+
+dependency_overrides:
+  amplify_auth_plugin_interface:
+    git:
+      url: git@github.com:madhavth/amplify-flutter.git
+      path: packages/auth/amplify_auth_plugin_interface
+      ref: cf5cd35
+
+
 
 flutter:
   plugin:
