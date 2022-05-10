@@ -14,7 +14,7 @@ class CognitoUserAttributeKey extends UserAttributeKey {
   const CognitoUserAttributeKey._(this.key, {this.readOnly = false});
 
   /// Prefix for custom Cognito attributes.
-  static const _customPrefix = 'custom:';
+  static const _customPrefix = '';
 
   /// The JSON key for this attribute.
   @override
