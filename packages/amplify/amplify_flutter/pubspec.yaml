@@ -69,7 +69,7 @@ dependency_overrides:
     git:
       url: git@github.com:madhavth/amplify-flutter.git
       path: packages/auth/amplify_auth_plugin_interface
-      ref: cf5cd35
+      ref: 9fa2fe0d
 
 
 
