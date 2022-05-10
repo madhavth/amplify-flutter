@@ -10,7 +10,6 @@ environment:
 dependencies:
   amplify_auth_cognito_android: 0.4.5
   amplify_auth_cognito_ios: 0.4.5
-  amplify_auth_plugin_interface: 0.4.5
   amplify_core: 0.4.5
   collection: ^1.15.0
   flutter:
@@ -23,6 +22,13 @@ dev_dependencies:
     path: ../../amplify_test
   flutter_test:
     sdk: flutter
+
+dependency_overrides:
+  amplify_auth_plugin_interface:
+    git:
+      url: git@github.com:madhavth/amplify-flutter.git
+      path: packages/auth/amplify_auth_plugin_interface
+      ref: eb085521
 
 flutter:
   plugin:
